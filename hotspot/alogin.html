@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="2; url=$(link-redirect)">
+    <meta http-equiv="refresh" content="2; url=https://levelondigital.com/">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="-1">
     <title>Internet hotspot - Redirect</title>
@@ -12,12 +12,12 @@
     <script>
         function startClock() {
             $(if popup == 'true')
-            open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
-        $(endif)
-        location.href = unescape('$(link-redirect-esc)');
+                open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
+            $(endif)
+            location.href = unescape('$(link-redirect-esc)');
         }
 
-    </script> 
+    </script>
 </head>
 
 <body onLoad="startClock()">
@@ -25,7 +25,14 @@
         <div class="main">
             <div class="wrap">
                 <h1>You are logged in</h1>
-                <p class="info">If nothing happens, click <a href="$(link-redirect)">here</a></p>
+                <p class="info">If nothing happens, click <a href="https://levelondigital.com/">here</a></p>
+
+                <!-- Update the image logo path -->
+                <img src="img/icon-2.png" alt="Levelon Digital Logo"
+                    style="max-width: 200px; display: block; margin: 20px auto;">
+
+                <p class="info">You are now redirected to our site.</p>
+
             </div>
         </div>
     </div>
